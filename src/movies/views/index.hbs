@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+	<body>
+		<form action="/movies" method="GET">
+			<label>Author</label>
+			<input type="text" name="director" />
+			<input type="submit" value="Search" />
+		</form>
+
+		<h1>Movies</h1>
+		<ul>
+		{{#each movies}}
+		  <li>{{this.title}}, {{this.director}}</li>
+		{{else}}
+		  <li class="empty">No movies to show</li>
+		{{/each}}
+		</ul>
+    <a href="/movies/add">Add a Movie</a>
+	</body>
+</html>

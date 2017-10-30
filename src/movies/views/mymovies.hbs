@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>My Movies</h1>
+		<ul>
+		{{#each movies}}
+		  <li>{{this.title}}</li>
+		{{else}}
+		  <li class="empty">No movies added</li>
+		{{/each}}
+		</ul>
+	</body>
+</html>
