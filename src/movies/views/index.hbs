@@ -10,9 +10,24 @@
         <center>Director: <input type="text" name="director" required/>
   			<input type="submit" value="Filter" /><center>
   		</form>
-      <ul>
+      <br>
+      <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      </style>
+      <table>
+      <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Director</th>
+      </tr>
+    </table>
+
+      <ul style="list-style-type: none;">
         {{#each movies}}
-  		  <li><center>{{this.title}}, {{this.director}}<center></li>
+  		  <li><center>{{this.title}}, {{this.year}}, {{this.director}}<center></li>
   		{{else}}
   		  <li class="empty">No movies to show</li>
   		{{/each}}
