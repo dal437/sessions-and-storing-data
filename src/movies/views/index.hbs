@@ -23,14 +23,16 @@
         <th>Year</th>
         <th>Director</th>
       </tr>
+      {{#each movies}}
+      <tr>
+      <td>{{this.title}}</td>
+      <td>{{this.year}}</td>
+      <td>{{this.director}}</td>
+    </tr>
+    {{/each}}
     </table>
 
       <ul style="list-style-type: none;">
-        {{#each movies}}
-  		  <li><center>{{this.title}}, {{this.year}}, {{this.director}}<center></li>
-  		{{else}}
-  		  <li class="empty">No movies to show</li>
-  		{{/each}}
   		</ul>
       <a href="/movies/add"><center>Add a Movie<center></a>
 	</body>
