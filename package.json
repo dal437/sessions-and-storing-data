@@ -4,6 +4,7 @@
   "description": "Name: Diego Lanao\r NetID: dal437\r Project: Homework #05 - Sessions and Storing Data",
   "main": "index.js",
   "dependencies": {
+    "mongoose": "^4.12.4",
     "uuid": "^3.1.0"
   },
   "devDependencies": {
