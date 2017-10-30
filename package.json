@@ -1,0 +1,32 @@
+{
+  "name": "dal437-homework05",
+  "version": "1.0.0",
+  "description": "Name: Diego Lanao\r NetID: dal437\r Project: Homework #05 - Sessions and Storing Data",
+  "main": "index.js",
+  "dependencies": {
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.18.2",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "express": "^4.16.2",
+    "hbs": "^4.0.1",
+    "node-uuid": "^1.4.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0480-003-fall-2017/dal437-homework05.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0480-003-fall-2017/dal437-homework05/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0480-003-fall-2017/dal437-homework05#readme"
+}
