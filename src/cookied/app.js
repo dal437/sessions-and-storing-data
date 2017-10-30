@@ -1,5 +1,5 @@
 const express = require('express');
-const cookied = require('./cookied.js');
+const cookied = require('./cookied');
 const app = express();
 const bodyParser = require('body-parser');
 const colorOptions = require('./colors.js');
@@ -31,7 +31,7 @@ app.get('/', function(req, res) {
 app.get('/preferences', function(req, res) {
     const favColor = req.hwSession.favColor || '#fff';
     const options = colorOptions.map(function(c) {
-        c.selected = c.hex === favColor; 
+        c.selected = c.hex === favColor;
         return c;
     });
     res.render('preferences.hbs', {favColor:favColor, options: options});
