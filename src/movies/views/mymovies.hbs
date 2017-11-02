@@ -6,12 +6,25 @@
 	</head>
 	<body>
 		<h1><b><center>Let's Watch Some Movies!<center><b></h1>
-		<ul>
-		{{#each movies}}
-		  <li>{{this.title}}</li>
-		{{else}}
-		  <li class="empty">No movies added</li>
-		{{/each}}
-		</ul>
+    <style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    </style>
+    <table>
+    <tr>
+      <th>Title</th>
+      <th>Year</th>
+      <th>Director</th>
+    </tr>
+    {{#each movies}}
+    <tr>
+    <td>{{this.title}}</td>
+    <td>{{this.year}}</td>
+    <td>{{this.director}}</td>
+  </tr>
+  {{/each}}
+  </table>
 	</body>
 </html>
