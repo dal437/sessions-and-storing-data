@@ -7,7 +7,6 @@ const session = require('express-session');
 const models = require('./db');
 
 // Server constants
-const PORT = 3000;
 const sessionOptions = {
     secret: 'secretWord',
     saveUninitialized: false,

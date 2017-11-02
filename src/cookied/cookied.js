@@ -12,7 +12,7 @@ exports.parseCookies = function(req, res, next) {
       const y = x.split('=');
       req.hwCookies[y[0]] = y[1];
     });
-  };
+  }
   console.log('cookie', req.hwCookies);
 	next();
 };
